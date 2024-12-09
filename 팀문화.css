@@ -1,0 +1,128 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.logo-container h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FF7E35; 
+}
+
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #333;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #FF7E35; 
+}
+
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    padding-left: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main img {
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 680px;
+    height: 400px;
+}
+
+h2 {
+    padding-left: 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* 프레임워크 항목 스타일 */
+.framework-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+    margin-top: 80px; /* 프레임워크 위쪽 여백 증가 */
+    width: 100%; /* 전체 너비 100% */
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 화면 중앙에 위치 */
+}
+
+.framework-item {
+    width: calc(50% - 15px); /* 한 줄에 두 개씩 배치, 간격 포함 */
+    height: 350px; 
+    background-color: #ffffff;
+    border-radius: 8px;
+    flex-direction: column; /* 내부 글자를 위아래로 배치 */
+    align-items: center;
+    justify-content: flex-start; /* 내용은 위쪽 정렬 */
+    text-align: center;
+    gap: 20px; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
+}
+
+/* 텍스트 스타일 */
+.framework-item span {
+    font-size: 1.7rem;
+    color: #1f1e1e;
+}
+
+.framework-item p {
+    font-size: 1.2rem;
+    color: #2c2b2b;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* 이미지가 항목 제일 아래에 위치하도록 설정 */
+.framework-item img {
+    position: absolute;
+    bottom: 10px; 
+    width: 80px; 
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%); /* 이미지가 항목 중앙에 오도록 조정 */
+}
+
+
+pre {
+    
+    font-family: Arial, sans-serif; 
+    font-size: 2rem;
+    white-space: pre-wrap; /* 줄 바꿈 처리를 위한 설정 */
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 화면 내에서 세로로 가운데 정렬 */
+}

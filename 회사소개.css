@@ -1,0 +1,84 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.logo-container h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FF7E35; 
+}
+
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #333;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #FF7E35; 
+}
+
+
+.active {
+    color: #FF7E35; 
+}
+
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    padding-left: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main img {
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+}
+
+h2 {
+    padding-left: 30px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+
+.company-info {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.company-info h2 {
+    font-size: 1.5rem;
+    color: #FF7E35;
+}
+
+.company-info p {
+    margin-top: 10px;
+}

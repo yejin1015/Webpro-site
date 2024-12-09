@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당근마켓 - 회사소개</title>
+    <link rel="stylesheet" href="회사소개.css"> 
+</head>
+<body>
+    <header>
+        <!-- 로고와 텍스트 -->
+        <div class="logo-container">
+            <img src="당근.png" alt="당근마켓 로고">
+            <h3>당근</h3>
+        </div>
+        <!-- 메뉴 -->
+        <nav>
+            <a href="회사소개.html" id="companyIntro">회사소개</a>
+            <a href="팀문화.html" id="teamCulture">팀문화</a>
+            <a href="#">서비스</a>
+            <a href="#">블로그</a>
+            <a href="#">채용공고</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            더 가깝고 <br>
+            따뜻한 당신 <br>
+            근처를 위하여
+        </h1>
+        <img src="당근가방.jpg" alt="당근마켓 로고">
+        <h2>
+            당근은 활발한 교류가 있는 지역 생활 커뮤니티를 꿈꿉니다<br>
+            누구나 동네에서의 즐겁고 따뜻한 연결을 경험할 수 있도록<br>
+            하이퍼로컬의 새로운 길을 만들어가고 있습니다.
+        </h2>
+
+        <!-- 회사소개 섹션 추가 -->
+        <section class="company-info">
+            <h2>우리의 미션</h2>
+            <p>
+                당근마켓은 지역 커뮤니티 활성화를 위해 동네 주민들이 쉽고 빠르게 교류할 수 있는 공간을 제공합니다.
+                우리가 추구하는 가치는 '가까운 사람들끼리 신뢰를 쌓고 서로 도움을 주고받을 수 있는 환경'입니다.
+            </p>
+            <h2>비전</h2>
+            <p>
+                당근마켓은 전국 각지에서 활발하게 활동하는 커뮤니티로 성장하며, 사람들의 삶의 질을 향상시키는 플랫폼을
+                만들어가고 있습니다. 또한, 더욱 다양한 기능을 통해 사용자에게 최적의 경험을 제공하고 있습니다.
+            </p>
+            <h2>회사 연혁</h2>
+            <p>
+                2015년: 당근마켓 서비스 시작<br>
+                2017년: 사용자 수 1,000만 명 돌파<br>
+                2019년: 국내 대표 로컬 서비스로 자리잡음<br>
+                2022년: 글로벌 확장 및 서비스 기능 강화
+            </p>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname;
+            console.log(currentPage); // 현재 경로를 출력하여 확인
+
+            if (currentPage.includes('회사소개')) {
+                document.getElementById('companyIntro').classList.add('active');
+            } else if (currentPage.includes('팀문화')) {
+                document.getElementById('teamCulture').classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
